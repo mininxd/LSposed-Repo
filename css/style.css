@@ -1,0 +1,80 @@
+*::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body.ui {
+  margin:0.2em;
+  margin-top: 1em;
+}
+.AMLinfo {
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  transition: opacity .4s;
+}
+.AMLinfo::after {
+  opacity:0;
+}
+.overflow-y {
+  overflow-y : scroll;
+}
+.justify-right {
+  display: flex;
+  justify-content: flex-end;
+}
+hr {
+  opacity: 0.4;
+}
+.amlList {
+  list-style: none ;
+  width: calc(fit-content + 5px);
+  padding: 10px;
+  height: fit-content;
+  background: #f0f0f0;
+  margin: 5px 0 5px 0;
+  font-weight: 700;
+  overflow-x: scroll;
+  font-size:16px;
+}
+li:hover, li:active, li:focus {
+  background: #ddd;
+}
+.amlListUrlDesc {
+  font-weight: 300;
+  font-size:12px;
+  opacity: 0.85;
+}
+.input {
+  outline: none;
+  border: #888 1px solid;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: #bbb 1px solid;
+}
+.footer {
+  opacity: 0.75;
+}
+a, a:active, a:visited, a:link {
+  color: black;
+}
+a:hover {
+  color: #222;
+}
+div.label:hover {
+  background: #ddd;
+}
+.changelogs {
+  color: #0386a8;
+}
+.howToDownPopup {
+border:#ddd solid 1px;
+border-radius: 5px;
+margin-top:10px;
+padding:10px
+}
+i.text {
+  font-size: 12px;
+}
