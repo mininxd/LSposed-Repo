@@ -1,0 +1,130 @@
+html {
+  position: relative;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display : none;
+}
+body, body.body {
+  background: #EADDFF;
+}
+div.header {
+  position: fixed;
+  top:0;
+  width:100%;
+  transition: 0.3s linear;
+  background: #65558F;
+  color: #fff;
+  padding: 2.5em 0 2em 10px;
+  z-index: 1;
+}
+span.header {
+  font-size: 40px;
+  font-family: Arial, sans-serif;
+}
+span.search {
+  font-size: 20px;
+  padding-top: 3px;
+  position: absolute;
+  right: 1em;
+  opacity:0;
+}
+input#searchBar {
+  outline: 0;
+  display: none;
+  width: 0%;
+  transition: 0.2s;
+  font-size: 18px;
+  padding: 5px;
+}
+input#searchBar:focus {
+  outline: 0;
+}
+.bold {
+  font-weight: 600;
+}
+.thin {
+  font-weight: 300;
+}
+div.headerSpacing {
+  margin-top: 6.5em;
+}
+div.divList {
+  margin-top: 10px;
+  width: 100%;
+}
+ul.ulList {
+  padding:2px;
+}
+li.list {
+  margin-left: 2%;
+  width: 96%;
+  border-radius: 20px;
+  list-style: none;
+ font-weight: 400;
+ background: #D0BCFF;
+ padding-bottom: -70px;
+}
+h2.repoName {
+  color: #1D192B;
+  padding: 10px;
+}
+p.desc {
+  transform: translateY(-18px);
+  padding-left: 1.5em;
+  padding-right: 2em;
+}
+.listBtnDiv {
+  position: relative;
+  display: flex;
+  top:20px;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 1em;
+}
+
+a.btnLink, a.btnLink:visited {
+  color: #EADDFF;
+}
+a.btnLink:focus, a.btnLink:active, a.btnLink:hover {
+  color: #65558F;
+}
+.closeBtn {
+  display: none;
+}
+.infoBtn, .closeBtn, .githubBtn, .downBtn {
+  margin-left: 10px;
+  color: #fff;
+  height: 30px;
+  width: 50px;
+  padding-top: 5px;
+  padding-left: 2px;
+  text-align: center;
+  background: #65558F;
+  color: #EADDFF;
+  font-size: 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.btn:active, .btn:hover, .btn:focus {
+  background: #EADDFF !important;
+  color: #65558F !important;
+}
+.pseudoInfo {
+  position: static;
+  height: 20px;
+  width: 100%;
+  background: #D0BCFF;
+  transform: translateY(20px);
+  border-radius:  0 0 20px 20px;
+}
+div.infoMenu {
+  padding: 0 10px 0 10px;
+  padding-top: 2em;
+  height: auto;
+  max-height: 300px;
+  overflow-y: scroll;
+  background: #65558F;
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+}

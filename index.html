@@ -1,165 +1,34 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>AndroidModLoader</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#aaa" />
-    <meta charset="utf-8" />
-        <link rel="stylesheet" href="./css/style.css"/>
-        <link
-      rel="stylesheet"
-      type="text/css"
-      href="./semanticUI/semantic.min.css"
-    />
-<script src="./js/pagination.min.js" type="module"></script>
-<script src="./semanticUI/semantic.js" type="module"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="<sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjG></sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjG>IZsDYGmIJLv2b8="
-      crossorigin="anonymous"
-    ></script>
-<script src="./js/fetch.js" type="module"></script>
-<script src="./js/script.js" type="module"></script>
-
-</head>
-
-<body class="ui container">
-    
-  <center>
-  <h1 class="ui header">AndroidModLoader</h1>
-  </center>
-  <br>
-<div class="ui paragraph AMLinfo">
-  <center>
-  <hr>
-  <h3>
-    AML is a mod loader for almost ANY android game or application!
-  </h3>
-  <p>
-  AML has been started as a GTA-series mod loader AND as a Gorilla Tag mod loader. Since Gorilla Tag is a Unity-application, AML should be "upgraded" with some IL2CPP tools that are NOT ready now. That means you CAN mod for Unity-games but you NEED some external tools.
-</p>
-<h4>Try refresh page when the list not showing</h4>
-</center>
-<br>
-
-
-<div class="ui segment changelogs">
- <h4>Changelogs :</h4>
- <ul>
-  <li>Sort function has implemented</li>
-  <li>Changelogs Funtion</li>
-  <li>Some Description</li>
- </ul>
-</div>
-
-<div class="ui justify-right">
- <button class="ui compact mini icon red dontShowIntro button">
-  Don't Show Again
-</button>
-</div>
-<hr>
-
-</div>
-<div class="ui justify-right">
-  <div class="ui primary compact mini button howToDown">
-   How to download mods?
-  </div>
-</div>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+   
+   <link rel="stylesheet" href="./root.css">
+   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./semanticUI/semantic.css">
+    <script type="module" src="./script.js"></script>
+    <script src="./semanticUI/semantic.js"></script>
+  </head>
+  <body class="body">
+ 
+ <div class="header">
+  <span class="header bold">LSPosed</span>
+  <span class="header thin">Repository</span>
+  <span class="search"><i class="search icon"></i></span>
   
-  <div class="ui howToDownPopup bottom right transition hidden">
-      
-   <h3>No .so file on release page?</h3>
-   Don't worry,<br>
-  open Github Actions on mod repository, then you will see All Workflow and select latest passing build 
-    
-    <br>
-    <br>
-    <i class="check circle green icon"></i> Build passing
-    <br>
-    <i class="check times circle red icon"></i> Build Error
-    <br>
-    <br>
-   <i class="ui mini text">// If There no build passing, skip this maybe still in development</i>
-   <br>
-   <div class="ui justify-right">
-     <div class="dontShowTip ui compact mini red button">Don't show this tip again</div>
-   </div>
+  <input id="searchBar" class="ui input searchBar">
   </div>
-
-
-
-<fieldset class="ui segment">
-<legend class="ui paragraph">Sort by :</legend>
-<div class="ui small labels">
-  <div class="ui label sName">
-    Name
-  </div>
-  <div class="ui label sUpdated">
-    Updated
-  </div>
-  <div class="ui label sStar">
-    Star
-  </div>
-  <div class="ui label sFork">
-    Fork
-  </div>
-</div>
-</fieldset>
-
-<div class="ui segment">
-  
-  <div class="ui justify-right">
-    <a href="https://s.id/standwithpalestine">
-    We Stand with Palestine &nbsp; <i class="flag palestine"></i>
-  </a>
-  </div>
-  
-<div class="ui input fluid">
-<input id="search" class="search" type="text" placeholder="Search...">
-</div>
-<br>
-  
-    <div id="list" class="amlListEl">
-      <div class="ui active loader"></div>
-    </div>
-    
+  <div class="headerSpacing"></div>
+<div id="repoListEl">
+  <ul class="ui ulList">
+  </ul>
 </div>
 
+<a id="aHref">
+<h1 id="test1"></h1>
+</a>
+<div id="test"></div>
 
-
-
-
-<div class="ui segment footer">
-    <fieldset class="ui segment">
-      <legend>Github Profiles :</legend>
-      
-      <a href="https://github.com/RusJJ/AndroidModLoader">
-<button class="ui tiny button">
-  <i class="icon github"></i>
-  AML
-</button>
-      </a>
-      
-      <a href="https://github.com/rusjj">
-<button class="ui tiny button">
-  <i class="icon github"></i>
-  RusJJ
-</button>
-      </a>
-      
-      <a href="https://github.com/mininxd">
-<button class="ui tiny button">
-  <i class="icon github"></i>
-  mininxd
-</button>
-      </a>
-      
-
-    </fieldset>
-    
-<center>
-  Made with <i class="ui pink icon heart"></i>
-</center>
-
-</div>
-</body>
+  </body>
+</html>
