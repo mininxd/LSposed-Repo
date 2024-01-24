@@ -1,9 +1,10 @@
 :root {
-  --primary-color: #65558F;
-  --secondary-color: #D0BCFF;
-  --container-color: #EADDFF;
+  --primary-color: #1E88E5;
+  --secondary-color: #409AE9;
+  --container-color: #FAFAFA;
+  --container-color-alt: #FFFFFF;
   --text-color: #212121;
-  --text-color-alt: #fff;
+  --text-color-alt: #FFFFFF;
   
 }
 
@@ -75,6 +76,13 @@ div.topBtn {
   border-radius: 20px;
   background: var(--primary-color);
   color: var(--container-color);
+  transition: 0.3s;
+}
+.topBtn:hover, .topBtn:active, .topBtn:focus {
+  background: var(--container-color);
+  color: var(--primary-color);
+  border: var(--primary-color) 1px solid;
+  
 }
 div.divList {
   margin-top: 10px;
@@ -89,7 +97,7 @@ li.list {
   border-radius: 20px;
   list-style: none;
  font-weight: 400;
- background: var(--secondary-color);
+ background: var(--container-color-alt);
  border: 2px solid var(--primary-color);
  padding-bottom: -70px;
 }
@@ -144,7 +152,7 @@ a.btnLink:focus, a.btnLink:active, a.btnLink:hover {
   position: static;
   height: 20px;
   width: 100%;
-  background: var(--secondary-color);
+  background: var(--container-color-alt);
   transform: translateY(20px);
   border-radius:  0 0 20px 20px;
 }
@@ -156,10 +164,10 @@ div.infoMenu {
   overflow-y: scroll;
   background: var(--primary-color);
   color: var(--text-color-alt);
-  border-radius: 0 0 18px 18px;
+  border-radius: 0 0 17px 17px;
   border: 2px solid var(--primary-color);
 }
-.fetchLoading {
+.fetchLoading, .loader{
   color: var(--primary-color);
   transform: translateY(10em) !important;
 }
