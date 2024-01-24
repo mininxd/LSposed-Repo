@@ -9,6 +9,7 @@ export function fetchRepoList() {
 //  var totalRepo = 30;
 
 jQuery(document).ready(function ($) {
+  $('.fetchLoading').css("display","none")
   for(let i = 0; i < totalRepo; i++) {
  
 var divList = document.createElement('div');

@@ -1,5 +1,6 @@
 <html>
   <head>
+    <title>LSposed Repository</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
@@ -20,7 +21,20 @@
   <input id="searchBar" class="ui input searchBar">
   </div>
   <div class="headerSpacing"></div>
+  
+  <div class="topBtnDiv">
+    <a href="https://github.com/Xposed-Modules-Repo/modules">
+    <div class="sourceBtn topBtn"><i class="github icon"></i>Repo Source</div>
+    </a>
+    <a href="https://modules.lsposed.org">
+    <div class="sourceBtn topBtn"><i class="globe icon"></i>Official Site</div>
+    </a>
+  </div>
+  
+
+
 <div id="repoListEl">
+  <div class="ui active centered fetchLoading inline text loader">Fetching Repo...</div>
   <ul class="ui ulList">
   </ul>
 </div>

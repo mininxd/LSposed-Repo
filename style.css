@@ -58,6 +58,24 @@ input#searchBar:focus {
 div.headerSpacing {
   margin-top: 6.5em;
 }
+div.topBtnDiv {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size:20px;
+  overflow-x: scroll;
+  overflow-y: none;
+  transform: translateY(10px);
+}
+div.topBtn {
+  display: inline-block;
+  height: fit-content;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 20px;
+  background: var(--primary-color);
+  color: var(--container-color);
+}
 div.divList {
   margin-top: 10px;
   width: 100%;
@@ -140,4 +158,8 @@ div.infoMenu {
   color: var(--text-color-alt);
   border-radius: 0 0 18px 18px;
   border: 2px solid var(--primary-color);
+}
+.fetchLoading {
+  color: var(--primary-color);
+  transform: translateY(10em) !important;
 }
