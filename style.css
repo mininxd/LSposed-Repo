@@ -147,6 +147,7 @@ a.btnLink:focus, a.btnLink:active, a.btnLink:hover {
 .btn:active, .btn:hover, .btn:focus {
   background: var(--container-color) !important;
   color: var(--primary-color) !important;
+  border: var(--primary-color) 1px solid;
 }
 .pseudoInfo {
   position: static;
@@ -165,7 +166,16 @@ div.infoMenu {
   background: var(--primary-color);
   color: var(--text-color-alt);
   border-radius: 0 0 17px 17px;
-  border: 2px solid var(--primary-color);
+  border: 3px solid var(--primary-color);
+}
+div.infoMenu a {
+  color: var(--text-color-alt) !important;
+  text-decoration: underline;
+  font-style: italic;
+  background: var(--secondary-color);
+}
+div.infoMenu img {
+  border-radius: 20px;
 }
 .fetchLoading, .loader{
   color: var(--primary-color);
