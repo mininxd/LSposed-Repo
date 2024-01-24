@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #65558F;
+  --secondary-color: #D0BCFF;
+  --container-color: #EADDFF;
+  --text-color: #212121;
+  --text-color-alt: #fff;
+  
+}
+
 html {
   position: relative;
   scroll-behavior: smooth;
@@ -6,15 +15,15 @@ html {
   display : none;
 }
 body, body.body {
-  background: #EADDFF;
+  background: var(--container-color);
 }
 div.header {
   position: fixed;
   top:0;
   width:100%;
   transition: 0.3s linear;
-  background: #65558F;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color-alt);
   padding: 2.5em 0 2em 10px;
   z-index: 1;
 }
@@ -62,16 +71,19 @@ li.list {
   border-radius: 20px;
   list-style: none;
  font-weight: 400;
- background: #D0BCFF;
+ background: var(--secondary-color);
+ border: 2px solid var(--primary-color);
  padding-bottom: -70px;
 }
 h2.repoName {
-  color: #1D192B;
-  padding: 10px;
+  color: var(--text-color);
+  padding-left: 1em;
+  padding-top: 10px;
 }
 p.desc {
-  transform: translateY(-18px);
-  padding-left: 1.5em;
+  color:var(--text-color);
+  transform: translateY(5px);
+  padding-left: 2em;
   padding-right: 2em;
 }
 .listBtnDiv {
@@ -84,37 +96,37 @@ p.desc {
 }
 
 a.btnLink, a.btnLink:visited {
-  color: #EADDFF;
+  color: var(--container-color);
 }
 a.btnLink:focus, a.btnLink:active, a.btnLink:hover {
-  color: #65558F;
+  color: var(--primary-color);
 }
 .closeBtn {
   display: none;
 }
 .infoBtn, .closeBtn, .githubBtn, .downBtn {
   margin-left: 10px;
-  color: #fff;
+  color: var(--container-color);
   height: 30px;
   width: 50px;
   padding-top: 5px;
   padding-left: 2px;
   text-align: center;
-  background: #65558F;
-  color: #EADDFF;
+  background: var(--primary-color);
+  color: var(--container-color);
   font-size: 20px;
   border-radius: 30px;
   transition: 0.3s;
 }
 .btn:active, .btn:hover, .btn:focus {
-  background: #EADDFF !important;
-  color: #65558F !important;
+  background: var(--container-color) !important;
+  color: var(--primary-color) !important;
 }
 .pseudoInfo {
   position: static;
   height: 20px;
   width: 100%;
-  background: #D0BCFF;
+  background: var(--secondary-color);
   transform: translateY(20px);
   border-radius:  0 0 20px 20px;
 }
@@ -124,7 +136,8 @@ div.infoMenu {
   height: auto;
   max-height: 300px;
   overflow-y: scroll;
-  background: #65558F;
-  color: #fff;
-  border-radius: 0 0 20px 20px;
+  background: var(--primary-color);
+  color: var(--text-color-alt);
+  border-radius: 0 0 18px 18px;
+  border: 2px solid var(--primary-color);
 }
