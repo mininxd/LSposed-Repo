@@ -5,6 +5,7 @@
   --container-color-alt: #FFFFFF;
   --text-color: #212121;
   --text-color-alt: #FFFFFF;
+  --theme-color: #409AE9;
   
 }
 
@@ -30,7 +31,7 @@ div.header {
 }
 span.header {
   font-size: 40px;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, Roboto, Sans-Serif;
 }
 span.search {
   font-size: 20px;

@@ -4,6 +4,9 @@ fetchRepoList();
 
 
 jQuery(document).ready(function ($) {
+  
+  $('meta.theme-color').attr("content","var(--theme-color)")
+  
   $(window).scroll(function() {
     if ($(this).scrollTop() > 60) {
     $('div.header').css("padding","10px");
