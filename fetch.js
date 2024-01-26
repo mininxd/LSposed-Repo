@@ -5,9 +5,9 @@ export function fetchRepoList() {
   return res.json();
 })
 .then((data) =>{
- var totalRepo = data.length;
-//  var totalRepo = 30;
-
+  var totalRepo = data.length;
+ // var totalRepo = 5;
+  
 jQuery(document).ready(function ($) {
   $('.fetchLoading').css("display","none")
   for(let i = 0; i < totalRepo; i++) {

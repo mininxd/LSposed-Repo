@@ -116,7 +116,7 @@ p.desc {
 .listBtnDiv {
   position: relative;
   display: flex;
-  top:20px;
+  top:18px;
   justify-content: flex-end;
   width: 100%;
   padding-right: 1em;
@@ -152,7 +152,7 @@ a.btnLink:focus, a.btnLink:active, a.btnLink:hover {
 }
 .pseudoInfo {
   position: static;
-  height: 20px;
+  height: 22px;
   width: 100%;
   background: var(--container-color-alt);
   transform: translateY(20px);
@@ -181,4 +181,44 @@ div.infoMenu img {
 .fetchLoading, .loader{
   color: var(--primary-color);
   transform: translateY(10em) !important;
+}
+
+
+
+
+/**DESKTOP**/
+@media (min-width: 768px) and (max-width: 1024px) {
+  div.header {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  h2.repoName {
+    overflow-x: scroll;
+    padding-left: 0.5em;
+    width: 95%;
+    border-radius: 20px 0 0 20px;
+  }
+  div.repoListContainer {
+    position: flex;
+    justify-content: center;
+    padding: 0 1em 0 1em;
+    width: 100%;
+  }
+  div.divList {
+    display: inline-block;
+    max-width: 24%;
+  }
+  p.desc {
+    overflow-y : scroll;
+    height: 40px;
+    max-height: 40px;
+    margin: 0;
+  }
+  div.infoMenu {
+    max-width: 300px;
+    word-wrap: break-all;
+  }
+  span.search{
+    opacity: 1;
+  }
 }
