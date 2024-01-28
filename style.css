@@ -173,8 +173,6 @@ div.infoMenu a {
   color: var(--text-color-alt) !important;
   text-decoration: underline;
   font-style: italic;
-  background: var(--secondary-color);
-  border-radius: 20px;
 }
 div.infoMenu img {
   border-radius: 20px;
