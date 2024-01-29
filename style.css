@@ -178,6 +178,9 @@ div.infoMenu a {
 }
 div.infoMenu img {
   border-radius: 20px;
+  background: var(--text-color-alt);
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .fetchLoading, .loader{
   color: var(--primary-color);
