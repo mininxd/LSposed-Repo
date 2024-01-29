@@ -5,8 +5,6 @@
   --container-color-alt: #FFFFFF;
   --text-color: #212121;
   --text-color-alt: #FFFFFF;
-  --theme-color: #409AE9;
-  
 }
 
 html {
@@ -65,7 +63,7 @@ div.topBtnDiv {
   padding-left: 10px;
   padding-right: 10px;
   font-size:20px;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: none;
   transform: translateY(10px);
 }
@@ -151,6 +149,7 @@ a.btnLink:focus, a.btnLink:active, a.btnLink:hover {
   border: var(--primary-color) 1px solid;
 }
 .pseudoInfo {
+  z-index: 1;
   position: static;
   height: 22px;
   width: 100%;
@@ -159,11 +158,14 @@ a.btnLink:focus, a.btnLink:active, a.btnLink:hover {
   border-radius:  0 0 20px 20px;
 }
 div.infoMenu {
+  z-index: 2;
   padding: 0 10px 0 10px;
   padding-top: 2em;
   height: auto;
   max-height: 300px;
-  overflow-y: scroll;
+  overflow-y: auto;
+  word-wrap: break-word;
+  word-break: break-all;
   background: var(--primary-color);
   color: var(--text-color-alt);
   border-radius: 0 0 17px 17px;
@@ -172,7 +174,7 @@ div.infoMenu {
 div.infoMenu a {
   color: var(--text-color-alt) !important;
   text-decoration: underline;
-  font-style: italic;
+  font-style: oblique;
 }
 div.infoMenu img {
   border-radius: 20px;
@@ -192,12 +194,13 @@ div.infoMenu img {
     padding-right: 4em;
   }
   h2.repoName {
-    overflow-x: scroll;
+    overflow-x: auto;
     padding-left: 0.5em;
     width: 95%;
     border-radius: 20px 0 0 20px;
   }
   div.repoListContainer {
+    z-index: 0;
     position: flex;
     justify-content: center;
     padding: 0 1em 0 1em;
@@ -208,7 +211,7 @@ div.infoMenu img {
     max-width: 24%;
   }
   p.desc {
-    overflow-y : scroll;
+    overflow-y : auto;
     height: 40px;
     max-height: 40px;
     margin: 0;
